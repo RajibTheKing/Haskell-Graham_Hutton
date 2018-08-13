@@ -5,6 +5,16 @@ how 2 ↑ 3 is evaluated using your definition.
 -}
 --Answer:
 
+--Using Operator
+
+(^^^) :: Integer -> Integer -> Integer
+a ^^^ 0 = 1
+a ^^^ b = a * (a ^^^ (b - 1))
+
+
+
+--Using Function
+
 easyPower :: Integer -> Integer -> Integer
 easyPower n 0 = 1
 easyPower n m = n * (easyPower n (m-1))

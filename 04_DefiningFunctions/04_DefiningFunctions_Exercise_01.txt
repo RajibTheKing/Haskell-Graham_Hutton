@@ -10,7 +10,7 @@ Answer:
 Definition 1:
 
 halve :: [a] -> [[a],[a]]
-halve xs = (take ((length xs) / 2) xs, drop ((length xs) / 2) xs)
+halve xs = (take ((length xs) `div` 2) xs, drop ((length xs) `div` 2) xs)
 
 
 Definition 2:
